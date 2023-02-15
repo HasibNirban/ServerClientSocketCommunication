@@ -5,14 +5,13 @@ pipeline {
         stage('Build') {
             steps {
                echo "Building"
-                sh "g++ -o /Server/server.cpp"
-                sh "g++ -o /Client/client.cpp"
+                sh "script.sh"
             }
         }
         stage('Test'){
             steps{
                 echo "testing"
-                sh "g++ -o main.cpp"
+                sh "g++ main.cpp"
                 sh "./a.out"
             }
         }

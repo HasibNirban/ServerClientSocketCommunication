@@ -5,8 +5,8 @@ pipeline {
         stage('Build') {
             steps {
                echo "Building"
-                sh "g++ -o ./Server/server.cpp"
-                sh "g++ -o ./Client/client.cpp"
+                sh "g++ /Server/server.cpp"
+                sh "g++ /Client/client.cpp"
             }
         }
         stage('Test'){

@@ -10,6 +10,3 @@ g++ client.cpp
 
 cd ..
 
-g++ main.cpp
-
-./a.out
